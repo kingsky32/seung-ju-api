@@ -14,6 +14,7 @@ import { PostgresConfigService } from '#configs/database/postgres/config.service
         username: postgresConfigService.username,
         password: postgresConfigService.password,
         database: postgresConfigService.database,
+        entities: ['dist/**/*.entity{.ts,.js}'],
         synchronize: true,
         logging: true,
       }),
